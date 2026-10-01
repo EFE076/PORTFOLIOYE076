@@ -5,23 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me | Efe Karatay</title>
   <link rel="stylesheet" href="about.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <nav class="navbar">
-    <a class="logo" href="index.html">Efe Karatay</a>
-    <div class="nav-links">
+    <a class="brand" href="index.html" aria-label="Efe Karatay home">
+      <span class="brand-mark"><i></i><i></i><i></i></span>
+      <span>E076</span>
+    </a>
+
+    <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-menu">
       <a href="index.html">Home</a>
       <a href="index.html#projects">Projects</a>
-      <a class="active" href="about.html">About</a>
+      <a class="active" href="about.html">About me</a>
     </div>
   </nav>
 
   <header class="page-header">
-    <div>
+    <div class="page-copy">
       <p class="eyebrow">ABOUT ME</p>
-      <h1>A little bit more<br>about me.</h1>
-      <p class="header-text">Creative Software Development student interested in websites, games and interactive projects.</p>
+      <h1>A little more<br>about <span>me.</span></h1>
+      <p>I'm a Creative Software Development student interested in websites, games and interactive projects.</p>
     </div>
+    <img src="foto.jpg" alt="E076 logo">
   </header>
 
   <main class="about-main">
@@ -63,8 +73,8 @@
   </main>
 
   <footer>
-    <p>Efe Karatay</p>
-    <span>Creative Software Developer</span>
+    <div><strong>E076</strong><span>Efe Karatay</span></div>
+    <p>Creative Software Developer</p>
   </footer>
 </body>
 </html>
