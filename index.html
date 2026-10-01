@@ -7,34 +7,64 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="hero-image">
-    <div class="hero-text">
-      <h1>My Portfolio</h1>
-      <h2>Hello, my name is Efe Karatay.</h2>
-      <h3>Creative Software Developer</h3>
-      <a href="about.html" class="learn-more">Learn more</a>
+  <nav class="navbar">
+    <a class="logo" href="index.html">Efe Karatay</a>
+    <div class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="about.html">About</a>
     </div>
-  </section>
+  </nav>
 
-  <section class="projects">
-    <h2>My Projects</h2>
-    <div class="project-container">
-      <div class="project-card">
-        <div class="project-image"><span>Project 1</span></div>
-        <h3>Project 1</h3>
-        <p>More information will be added later.</p>
-      </div>
-      <div class="project-card">
-        <div class="project-image"><span>Project 2</span></div>
-        <h3>Project 2</h3>
-        <p>More information will be added later.</p>
-      </div>
-      <div class="project-card">
-        <div class="project-image"><span>Project 3</span></div>
-        <h3>Project 3</h3>
-        <p>More information will be added later.</p>
-      </div>
+  <header class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">PORTFOLIO</p>
+      <h1>Hello, my name is<br>Efe Karatay.</h1>
+      <p class="subtitle">Creative Software Developer</p>
+      <a class="button" href="about.html">Learn more</a>
     </div>
-  </section>
+  </header>
+
+  <main>
+    <section class="projects" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow dark">MY WORK</p>
+        <h2>Projects</h2>
+        <p>Some projects I have worked on during my study. More will be added later.</p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-placeholder">Project 01</div>
+          <div class="project-info">
+            <span>Web Development</span>
+            <h3>Project 1</h3>
+            <p>Project information will be added later.</p>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-placeholder">Project 02</div>
+          <div class="project-info">
+            <span>Design & Development</span>
+            <h3>Project 2</h3>
+            <p>Project information will be added later.</p>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-placeholder">Project 03</div>
+          <div class="project-info">
+            <span>Interactive</span>
+            <h3>Project 3</h3>
+            <p>Project information will be added later.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Efe Karatay</p>
+    <span>Creative Software Developer</span>
+  </footer>
 </body>
 </html>
