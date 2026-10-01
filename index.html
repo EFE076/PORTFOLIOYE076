@@ -5,55 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Efe Karatay | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <nav class="navbar">
-    <a class="logo" href="index.html">Efe Karatay</a>
-    <div class="nav-links">
+    <a class="brand" href="index.html" aria-label="Efe Karatay home">
+      <span class="brand-mark"><i></i><i></i><i></i></span>
+      <span>E076</span>
+    </a>
+
+    <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-menu">
       <a class="active" href="index.html">Home</a>
       <a href="#projects">Projects</a>
-      <a href="about.html">About</a>
+      <a href="about.html">About me</a>
     </div>
   </nav>
 
   <header class="hero">
-    <div class="hero-content">
-      <p class="eyebrow">PORTFOLIO</p>
-      <h1>Hello, my name is<br>Efe Karatay.</h1>
-      <p class="subtitle">Creative Software Developer</p>
-      <a class="button" href="about.html">Learn more</a>
+    <div class="hero-copy">
+      <p class="eyebrow">CREATIVE SOFTWARE DEVELOPER</p>
+      <h1>I build digital<br>things that <span>work.</span></h1>
+      <p class="intro">I'm Efe Karatay. I study Creative Software Development and I like building websites, games and interactive projects.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#projects">View my work</a>
+        <a class="button secondary" href="about.html">More about me</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <img src="foto.jpg" alt="E076 logo">
     </div>
   </header>
 
   <main>
     <section class="projects" id="projects">
       <div class="section-heading">
-        <p class="eyebrow dark">MY WORK</p>
-        <h2>Projects</h2>
-        <p>Some projects I have worked on during my study. More will be added later.</p>
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Projects</h2>
+        </div>
+        <p>Some projects I have worked on during my study. More will be added as I build them.</p>
       </div>
 
       <div class="project-grid">
         <article class="project-card">
-          <div class="project-placeholder">Project 01</div>
+          <div class="project-preview"><span>01</span><strong>Web Development</strong></div>
           <div class="project-info">
-            <span>Web Development</span>
+            <span>HTML / CSS / JavaScript</span>
             <h3>Project 1</h3>
             <p>Project information will be added later.</p>
           </div>
         </article>
+
         <article class="project-card">
-          <div class="project-placeholder">Project 02</div>
+          <div class="project-preview"><span>02</span><strong>Design & Development</strong></div>
           <div class="project-info">
-            <span>Design & Development</span>
+            <span>Design / Development</span>
             <h3>Project 2</h3>
             <p>Project information will be added later.</p>
           </div>
         </article>
+
         <article class="project-card">
-          <div class="project-placeholder">Project 03</div>
+          <div class="project-preview"><span>03</span><strong>Interactive</strong></div>
           <div class="project-info">
-            <span>Interactive</span>
+            <span>Creative Coding</span>
             <h3>Project 3</h3>
             <p>Project information will be added later.</p>
           </div>
@@ -63,8 +83,8 @@
   </main>
 
   <footer>
-    <p>Efe Karatay</p>
-    <span>Creative Software Developer</span>
+    <div><strong>E076</strong><span>Efe Karatay</span></div>
+    <p>Creative Software Developer</p>
   </footer>
 </body>
 </html>
