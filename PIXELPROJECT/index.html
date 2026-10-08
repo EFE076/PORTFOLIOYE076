@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tactical Shooter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main id="shell"><canvas id="game" width="1100" height="650"></canvas>
+        <div id="hud" class="hidden">
+            <div id="top"><span id="blueScore">BLUE 0</span><span id="clock">10:00</span><span id="redScore">RED
+                    0</span></div>
+            <div id="feed"></div>
+            <div id="minimap"><canvas id="mini" width="180" height="120"></canvas></div>
+            <div id="bottomLeft"><b id="name">BLUE • YOU</b>
+                <div>HEALTH <strong id="hp">100</strong> / ARMOR <strong id="armor">50</strong></div>
+                <div id="healthTrack">
+                    <div id="healthFill"></div>
+                </div>
+            </div>
+            <div id="bottomRight"><b id="weapon">RIFLE</b><strong id="ammo">30 / 180</strong><small id="reload">R TO
+                    RELOAD</small></div>
+            <div id="reticle">+</div>
+            <div id="respawn"></div>
+            <div id="hitmarker"></div>
+        </div>
+        <section id="menu" class="overlay">
+            <h1>TACTICAL SHOOTER</h1>
+            <p>TOP-DOWN • OFFLINE 5V5</p><label>Bot difficulty <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="hard">Hard</option>
+                </select></label><label>Map <select id="mapChoice">
+                    <option value="urban">Urban District</option>
+                    <option value="desert">Desert Outpost</option>
+                </select></label><button id="play">PLAY MATCH</button>
+            <p class="hint">WASD move • Shift sprint • Ctrl crouch • Mouse aim/fire • R reload • 1 rifle • 2 pistol •
+                Tab scoreboard • Esc pause</p>
+        </section>
+        <section id="pause" class="overlay hidden">
+            <h2>PAUSED</h2><button id="resume">RESUME</button><button id="quit">MAIN MENU</button>
+        </section>
+        <section id="results" class="overlay hidden">
+            <h2 id="resultTitle">MATCH OVER</h2>
+            <p id="resultStats"></p><button id="again">PLAY AGAIN</button><button id="home">MAIN MENU</button>
+        </section>
+        <section id="scoreboard" class="overlay hidden">
+            <h2>SCOREBOARD</h2>
+            <div id="scoreRows"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
